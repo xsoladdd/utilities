@@ -6,16 +6,12 @@ import TextArea from "../../ui/TextArea/TextArea";
 import { convertColorArrayToTailwindObject } from "./convertColorArrayToTailwindObject";
 interface tailwindColorConverterProps {}
 
-const tailwindColorConverter: React.FC<tailwindColorConverterProps> = ({}) => {
+const TailwindColorConverter: React.FC<tailwindColorConverterProps> = ({}) => {
   const [arrayString, setArrayString] = useState(``);
   const [output, setOutput] = useState(``);
 
   const arrayError =
     "Conversion failed, Only converts array of string to colors";
-
-  const x = "hey";
-
-  var zzzz = "unused";
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -62,4 +58,4 @@ const tailwindColorConverter: React.FC<tailwindColorConverterProps> = ({}) => {
     </Layout>
   );
 };
-export default tailwindColorConverter;
+export default TailwindColorConverter;
