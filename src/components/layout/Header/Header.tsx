@@ -2,9 +2,7 @@ import React from "react";
 import DarkmodeSwitcher from "./DarkmodeSwitcher";
 import NavLink from "./NavLink";
 
-interface HeaderProps {}
-
-const Header: React.FC<HeaderProps> = ({}) => {
+const Header: React.FC = ({}) => {
   return (
     <>
       <header className="text-gray-600 body-font border-b-2 border-b-gray-100 dark:border-b-gray-800">

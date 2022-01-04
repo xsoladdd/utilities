@@ -3,9 +3,7 @@ import React from "react";
 import { isDarkmode } from "../../../helper/isDarkmode";
 import Switch from "../../../ui/switch/Switch";
 
-interface DarkmodeSwitcherProps {}
-
-const DarkmodeSwitcher: React.FC<DarkmodeSwitcherProps> = ({}) => {
+const DarkmodeSwitcher: React.FC = ({}) => {
   const { theme, setTheme } = useTheme();
   return (
     <div className="flex gap-2">
