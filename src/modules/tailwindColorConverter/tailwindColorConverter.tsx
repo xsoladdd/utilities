@@ -15,7 +15,7 @@ const tailwindColorConverter: React.FC<tailwindColorConverterProps> = ({}) => {
 
   const x = "hey";
 
-  const zzzz = "unused";
+  var zzzz = "unused";
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
