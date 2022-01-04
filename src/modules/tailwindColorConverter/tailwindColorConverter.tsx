@@ -13,6 +13,8 @@ const tailwindColorConverter: React.FC<tailwindColorConverterProps> = ({}) => {
   const arrayError =
     "Conversion failed, Only converts array of string to colors";
 
+  const x = "hey";
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     /*
