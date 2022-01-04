@@ -1,10 +1,12 @@
 import React from "react";
 import { colorVariantTypes, sizeVariantTypes } from "../../../utils/constants";
 
-interface ButtonProps extends Omit<React.HTMLProps<HTMLButtonElement>, "size"> {
-  onClick: () => void;
+interface ButtonProps
+  extends Omit<React.HTMLProps<HTMLButtonElement>, "size" | "type"> {
+  onClick?: () => void;
   variant?: colorVariantTypes;
   size?: sizeVariantTypes;
+  type?: "button" | "submit" | "reset" | undefined;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -51,6 +53,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       className={`text-white border-0 px-3 disabled:opacity-75 focus:outline-none rounded ${sizeClass} ${colorClass} ${className}`}
       onClick={onClick}
+      type={type}
       {...rest}
       // type={typeof type === "string" ? "button" : type}
     >

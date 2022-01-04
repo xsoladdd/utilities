@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Header";
+import Header from "./Header/Header";
 
 interface LayoutProps {}
 
@@ -7,7 +7,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
-      <div className="">{children}</div>
+      <div className="w-3/4 mx-auto">{children}</div>
     </>
   );
 };
