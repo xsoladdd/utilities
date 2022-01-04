@@ -4,9 +4,8 @@ import Layout from "../../components/layout/Layout";
 import Button from "../../ui/Buttons/NormalButton/Button";
 import TextArea from "../../ui/TextArea/TextArea";
 import { convertColorArrayToTailwindObject } from "./convertColorArrayToTailwindObject";
-interface tailwindColorConverterProps {}
 
-const TailwindColorConverter: React.FC<tailwindColorConverterProps> = ({}) => {
+const TailwindColorConverter: React.FC = ({}) => {
   const [arrayString, setArrayString] = useState(``);
   const [output, setOutput] = useState(``);
 

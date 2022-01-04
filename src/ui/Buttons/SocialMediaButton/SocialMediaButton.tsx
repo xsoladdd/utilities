@@ -1,28 +1,23 @@
 import React from "react";
-import { sizeVariantTypes } from "../../../utils/constants";
 import {
   FaFacebookF,
-  FaInstagram,
   FaGithub,
   FaGoogle,
+  FaInstagram,
   FaYoutube,
 } from "react-icons/fa";
-import { IconType } from "react-icons";
+import { sizeVariantTypes } from "../../../utils/constants";
 import SocialMediaWrapper from "./SocialMediaWrapper";
 import { socialMediaVariantTypes } from "./types";
 
 interface SocialMediaButtonProps
   extends Omit<React.HTMLProps<HTMLButtonElement>, "size" | "type" | "label"> {
-  onClick: () => void;
   size?: sizeVariantTypes;
   type: socialMediaVariantTypes;
   label?: boolean;
 }
 
 const SocialMediaButton: React.FC<SocialMediaButtonProps> = ({
-  children,
-  className,
-  onClick,
   size,
   label,
   type,

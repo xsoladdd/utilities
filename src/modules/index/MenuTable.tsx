@@ -2,9 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { tableStructureType } from "./types";
 
-interface MenuTableProps {}
-
-const MenuTable: React.FC<MenuTableProps> = ({}) => {
+const MenuTable: React.FC = ({}) => {
   const mainMenu: tableStructureType[] = [
     {
       desc: "Convert Array to Tailwind JSON Color Template",

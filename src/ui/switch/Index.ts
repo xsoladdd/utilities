@@ -1,3 +1,5 @@
 import Switch from "./Switch";
 
-export default { Switch };
+const exp = { Switch };
+
+export default exp;
