@@ -1,7 +1,4 @@
-import { useTheme } from "next-themes";
 import React from "react";
-import { isDarkmode } from "../../../helper/isDarkmode";
-import Switch from "../../../ui/switch/Switch";
 import DarkmodeSwitcher from "./DarkmodeSwitcher";
 import NavLink from "./NavLink";
 
